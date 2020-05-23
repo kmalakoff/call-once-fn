@@ -1,6 +1,6 @@
-module.exports = function callOnceFn(callback) {
+module.exports = function onceFn(callback) {
   var called = false;
-  return function callOnceWrapper(arg1, arg2, arg3, arg4, arg5, arg6) {
+  return function onceWrapper(arg1, arg2, arg3, arg4, arg5, arg6) {
     if (called) return;
     called = true;
 
