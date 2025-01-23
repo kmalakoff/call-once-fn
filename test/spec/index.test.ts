@@ -1,6 +1,7 @@
-const assert = require('assert');
+import assert from 'assert';
 
-const once = require('call-once-fn');
+// @ts-ignore
+import once from 'call-once-fn';
 
 describe('once', () => {
   describe('does not call multiple times', () => {
