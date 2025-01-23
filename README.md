@@ -3,16 +3,12 @@
 Calls a callback only once.
 
 ```
-var once = once('call-once-fn');
-var assert = require('assert');
+import once from 'call-once-fn';
+import assert from 'assert';
 
-var results = [];
+const results = [];
 
-function addResults() {
-  results.push(arguments);
-}
-
-var callback1 = once(addResults);
+const callback1 = once(() => results.push(arguments));
 assert.ok(!results.length);
 callback1('error', 'value1', 'value2');
 assert.equal(results.length, 1);
