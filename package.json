@@ -3,10 +3,8 @@
   "version": "1.0.10",
   "description": "Calls a callback only once",
   "keywords": [
-    "iterator",
-    "asyncIterator",
-    "Symbol.asyncIterator",
-    "next",
+    "call",
+    "once",
     "callback"
   ],
   "homepage": "https://github.com/kmalakoff/call-once-fn",
@@ -16,7 +14,14 @@
   },
   "license": "MIT",
   "author": "Kevin Malakoff <kmalakoff@gmail.com> (https://github.com/kmalakoff)",
+  "type": "module",
+  "exports": {
+    "import": "./dist/esm/index.mjs",
+    "require": "./dist/cjs/index.cjs",
+    "types": "./dist/types/index.d.ts"
+  },
   "main": "dist/cjs/index.cjs",
+  "module": "dist/esm/index.mjs",
   "types": "dist/types/index.d.ts",
   "files": [
     "dist"
@@ -36,9 +41,6 @@
     "node": ">=0.8"
   },
   "tsds": {
-    "source": "src/index.mjs",
-    "targets": [
-      "cjs"
-    ]
+    "source": "src/index.ts"
   }
 }
