@@ -1,6 +1,6 @@
 export default function onceFn(callback) {
   let called = false;
-  return function onceWrapper(arg1, arg2, arg3, arg4, arg5, arg6) {
+  return function wrapper(arg1, arg2, arg3, arg4, arg5, arg6) {
     if (called) return;
     called = true;
 
