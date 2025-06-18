@@ -8,7 +8,7 @@ describe('once', () => {
     let args = [];
 
     function addArguments() {
-      // biome-ignore lint/style/noArguments: <explanation>
+      // biome-ignore lint/complexity/noArguments: Apply arguments
       args.push(Array.prototype.slice.call(arguments, 0));
     }
 

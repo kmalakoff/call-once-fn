@@ -6,7 +6,7 @@ export default function once(fn: CallFn): CallFn {
     if (called) return;
     called = true;
 
-    // biome-ignore lint/style/noArguments: <explanation>
+    // biome-ignore lint/complexity/noArguments: Apply arguments
     switch (arguments.length) {
       case 0:
         return fn();
@@ -23,7 +23,7 @@ export default function once(fn: CallFn): CallFn {
       case 6:
         return fn(arg1, arg2, arg3, arg4, arg5, arg6);
       default:
-        // biome-ignore lint/style/noArguments: <explanation>
+        // biome-ignore lint/complexity/noArguments: Apply arguments
         return fn.apply(null, arguments);
     }
   };
