@@ -1,6 +1,5 @@
 import assert from 'assert';
 
-// @ts-ignore
 import once from 'call-once-fn';
 
 describe('once', () => {
