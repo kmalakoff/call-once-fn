@@ -1,1 +1,1 @@
-ignores: ["call-once-fn"]
+ignores: ["node-version-use", "ts-dev-stack", "@biomejs/biome", "call-once-fn"]
