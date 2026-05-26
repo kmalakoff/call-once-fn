@@ -24,7 +24,7 @@ export default function once(fn: CallFn): CallFn {
         return fn(arg1, arg2, arg3, arg4, arg5, arg6);
       default:
         // biome-ignore lint/complexity/noArguments: Apply arguments
-        return fn.apply(null, arguments);
+        return fn.apply(null, arguments as unknown as unknown[]);
     }
   };
 }
