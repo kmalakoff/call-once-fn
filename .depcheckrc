@@ -1,1 +1,1 @@
-ignores: ["node-version-use", "ts-dev-stack", "call-once-fn"]
+ignores: ["call-once-fn", "node-version-use", "ts-dev-stack"]
