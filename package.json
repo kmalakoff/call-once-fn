@@ -1,6 +1,6 @@
 {
   "name": "call-once-fn",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Calls a callback only once",
   "keywords": [
     "iterator",
